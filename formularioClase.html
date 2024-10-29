@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <!--IMPORTANTE EL FORM ACTION CON EL METHOD "post"-->
+    <h1>Formulario: </h1>
+    <form action = "formularioEnPHP.php" method = "post">
+
+    <!--LABELS NORMALES-->
+
+    <label for = "nombre">Nombre: </label>
+    <input type = "text" id = "nombre" name = "user_name"/>
+    <br>
+
+    <label for = "contraseña">Contraseña: </label>
+    <input type = "password" id = "contraseña" name = "contraseña" />
+    <br>
+
+    <label for = "educacion">Educacion: </label>
+    <select id="educacion" name = "educacion">
+        <option value = "OpcionEducacionAvanzada">Educación avanzada</option>
+        <option value = "OpcionEducacionObligatoria">Educación obligatoria</option>
+    </select>
+    <br>
+
+    <!-- EN LOS RADIO HAY QUE PONER EL MISMO name = "" PARA QUE SOLO SE PUEDA MARCAR UNA OPCIÓN-->
+
+    <label>Nacionalidad: </label>
+    <input type = "radio" id = "OpcionEsp" name = "UsarRadio" value = "Esp">
+    <label for = "OpcionEsp">Esp</label>
+
+    <input type = "radio" id = "OpcionOtra" name = "UsarRadio" value = "otra">
+    <label for = "OpcionOtra">Otra</label>
+    <br>
+
+    <!--USO DEL CHECKBOX-->
+
+    <label>Idiomas: </label>
+    <input type = "checkbox" id = "opcionEspañol" name = "opcionEspañol" value = "opcionEspañol">
+    <label for = "opcionEspañol">Español</label>
+
+    <input type = "checkbox" id = "opcionIngles" name = "opcionIngles" value = "opcionIngles">
+    <label for = "opcionIngles">Inglés</label>
+
+    <input type = "checkbox" id = "opcionFrances" name = "opcionFrances" value = "opcionFrances">
+    <label for = "opcionFrances">Francés</label>
+
+    <input type = "checkbox" id = "opcionAleman" name = "opcionAleman" value = "opcionAleman">
+    <label for = "opcionAleman">Alemán</label>
+    <br>
+    
+    <!--mas labels normales -->
+
+    <label for = "Email">Email: </label>
+    <input type = "text" id = "email" name = "email"/>
+    <br>
+
+    <label for = "Sitio web">Sitio web: </label>
+    <input type = "text" id = "SitioWeb" name = "Sitio web"/>
+    <br>
+
+    <button type = "submit">Enviar</button>
+    </form>
+</body>
+</html>
