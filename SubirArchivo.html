@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir archivo en HTML</title>
+</head>
+<body>
+    <form action = "formularioEnPHP.php" method = "post" enctype = "multipart/form-data">
+        <input type = "text" name = "cadenatexto" size = "20" maxlength="100">
+        <input type = "hidden" name = "MAX_FILE_SIZE" VALUE = "10000">
+        <br>
+        <br>
+        <b>Enviar un nuevo archivo: </b>
+        <br>
+        <input name = "userfile" type = "file">
+        <br>
+        <input type = "submit" value = "Enviar">
+    </form>
+</body>
+</html>
